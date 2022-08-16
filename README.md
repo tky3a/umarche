@@ -35,3 +35,8 @@ sail artisan make:component コンポーネント名
 // app/View/Componentsのみに作成する場合
 sail artisan make:component コンポーネント名 --inline
 ```
+
+# マイグレーションとモデル同時作成
+```
+sail artisan make:model Model -m
+```
