@@ -168,12 +168,14 @@ return [
 
         /*
          * Application Service Providers...
+         * 作成したサービスプロバイダーはここに追加することでブラウザの再読み込みした時にLaravel読み込み時に
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\SampleServiceProvider::class, //追加
 
     ],
 
