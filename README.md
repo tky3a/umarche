@@ -26,3 +26,12 @@ sail npm watch
     "intelephense.diagnostics.undefinedMethods": false,
 }
 ```
+
+# クラスベースのコンポーネント作成
+```
+// app/View/Components　と　resources/view/components　配下に作成
+sail artisan make:component コンポーネント名
+
+// app/View/Componentsのみに作成する場合
+sail artisan make:component コンポーネント名 --inline
+```
