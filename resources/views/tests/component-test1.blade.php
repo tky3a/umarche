@@ -5,5 +5,8 @@
   コンポーネント１
 
   {{-- propsを使う例 --}}
-  <x-tests.card title="タイトル" content="本文" :message="$message" />
+  <div class="flex justify-center">
+    <x-tests.card title="タイトル" content="本文" :message="$message" />
+    <x-tests.card title="タイトル２" />
+  </div>
 </x-tests.app>
