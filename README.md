@@ -40,3 +40,16 @@ sail artisan make:component コンポーネント名 --inline
 ```
 sail artisan make:model Model -m
 ```
+
+# ルートURL
+
+```
+// オーナー
+localhost/owner/
+
+// 管理者
+localhost/admin/
+
+// 一般ユーザー
+localhost/
+```
