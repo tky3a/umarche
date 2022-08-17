@@ -53,3 +53,8 @@ localhost/admin/
 // 一般ユーザー
 localhost/
 ```
+
+# storageフォルダを見れるようにlinkする
+```
+sail artisan storage:link
+```
