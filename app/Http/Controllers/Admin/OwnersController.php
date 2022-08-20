@@ -36,7 +36,9 @@ class OwnersController extends Controller
         // ]);
         // dd($e_all, $q_get, $q_first, $c_test);
 
-        return \view('admin.owners.index', \compact('e_all', 'q_get'));
+        $owners = Owner::select('name', 'email', 'created_at')->get();
+
+        return \view('admin.owners.index', \compact('owners'));
     }
 
     /**
@@ -46,7 +48,7 @@ class OwnersController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.owners.create');
     }
 
     /**
