@@ -76,5 +76,6 @@ Route::middleware('auth:admin')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
 
+    // resourcesでCRUDルーティングを一括で作成
     Route::resource('owners', OwnersController::class);
 });
